@@ -1,0 +1,288 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #0b1424;
+  color: #f8fafc;
+}
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  background: radial-gradient(ellipse at top, #172a48, #0b1424 70%);
+}
+
+.auth-layout {
+  width: 100%;
+  max-width: 520px;
+  min-height: auto;
+  display: block;
+  border: 1px solid #263852;
+  border-radius: 16px;
+  background: #0c1728;
+  box-shadow: 0 24px 70px #0003;
+}
+
+.form-panel {
+  padding: 42px;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  display: flex;
+  justify-content: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.brand > span:last-child > span {
+  color: #3975ff;
+}
+
+.brand-symbol {
+  color: #3975ff;
+  font-size: 32px;
+}
+
+.topbar-note,
+.hero-panel,
+.form-footer {
+  display: none;
+}
+
+.form-content {
+  width: 100%;
+  margin: 42px auto 0;
+}
+
+.eyebrow {
+  display: block;
+  color: #6692ff;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.form-content h1 {
+  margin: 18px 0 10px;
+  font-size: 34px;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.form-content h1 span {
+  color: #4d7fff;
+}
+
+.subtitle {
+  color: #9bacc4;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 26px;
+}
+
+.google-button {
+  width: 100%;
+  min-height: 50px;
+  border: 1px solid #435674;
+  border-radius: 9px;
+  background: transparent;
+  color: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.google-button:hover {
+  background: #16253a;
+}
+
+.google-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 22px 0;
+  color: #8fa2bd;
+  font-size: 12px;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  height: 1px;
+  flex: 1;
+  background: #293951;
+}
+
+form label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 8px;
+  color: #dbe5f3;
+}
+
+form > input,
+.password-wrapper input {
+  width: 100%;
+  height: 50px;
+  padding: 0 14px;
+  border: 1px solid #334760;
+  border-radius: 9px;
+  background: #101e31;
+  color: white;
+  outline: none;
+}
+
+form input:focus {
+  border-color: #4d7fff;
+}
+
+form input::placeholder {
+  color: #8093ad;
+}
+
+form > input {
+  margin-bottom: 20px;
+}
+
+.password-label {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.text-button,
+.switch-mode button {
+  border: 0;
+  background: none;
+  color: #5790ff;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.password-wrapper {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.password-wrapper input {
+  padding-right: 76px;
+}
+
+.show-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  background: none;
+  color: #8fb2ff;
+  font-size: 11px;
+}
+
+.primary-button {
+  width: 100%;
+  min-height: 51px;
+  border: 0;
+  border-radius: 9px;
+  background: #215af5;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.primary-button:hover {
+  background: #3970ff;
+}
+
+.switch-mode {
+  text-align: center;
+  margin-top: 26px;
+  color: #9bacc4;
+  font-size: 13px;
+}
+
+.switch-mode button {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.feedback {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.error {
+  color: #ff9292;
+}
+
+.success {
+  color: #7ce4b0;
+}
+
+.profile-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 35px;
+  border: 1px solid #263852;
+  border-radius: 16px;
+  background: #0c1728;
+  text-align: center;
+}
+
+.profile-card .brand {
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.profile-card .avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.profile-card .muted {
+  color: #9bacc4;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 520px) {
+  .auth-page {
+    padding: 16px;
+  }
+
+  .form-panel {
+    padding: 28px 22px;
+  }
+
+  .form-content {
+    margin-top: 34px;
+  }
+
+  .form-content h1 {
+    font-size: 29px;
+  }
+}
